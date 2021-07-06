@@ -26,7 +26,7 @@ export class FormModal extends Component {
           onHide={this.props.open}
         >
          <Modal.Header closeButton>
-          <Modal.Title>Editing Info</Modal.Title>
+          <Modal.Title>Update</Modal.Title>
         </Modal.Header>
 
           <Modal.Body>
