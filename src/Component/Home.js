@@ -22,7 +22,7 @@ export class Home extends Component {
 
   addtofav= (idx)=>{
 
-      let url=`http://localhost:3002/addtofav`;
+      let url=`https://drinksexams.herokuapp.com/addtofav`;
       let obj={
         strDrink:this.state.alldrinks[idx].strDrink,
         strDrinkThumb:this.state.alldrinks[idx].strDrinkThumb,

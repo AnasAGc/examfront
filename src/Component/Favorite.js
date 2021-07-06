@@ -13,7 +13,7 @@ export class Favorite extends Component {
   }
 
   componentDidMount = () => {
-    let url = `http://localhost:3002/getFavDrinks`;
+    let url = `https://drinksexams.herokuapp.com/getFavDrinks`;
 
     axios.get(url).then((result) => {
       this.setState({
@@ -25,7 +25,7 @@ export class Favorite extends Component {
   deletefav = (idx) => {
     let id = this.state.allFavDrinks[idx]._id;
 
-    let url = `http://localhost:3002/deletFav?id=${id}`;
+    let url = `https://drinksexams.herokuapp.com/deletFav?id=${id}`;
     axios.delete(url).then((result) => {
       this.setState({
         allFavDrinks: result.data,
@@ -55,7 +55,7 @@ export class Favorite extends Component {
     })
 
     let obj=data;
-    let url = `http://localhost:3002/updateFav`;
+    let url = `https://drinksexams.herokuapp.com/updateFav`;
 
     axios.put(url,obj).then(result=>{
         this.setState({
